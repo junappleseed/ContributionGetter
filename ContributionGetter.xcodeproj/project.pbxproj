@@ -14,6 +14,7 @@
 		BF7264AF1D327DE800FEECB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7264AD1D327DE800FEECB1 /* LaunchScreen.storyboard */; };
 		BF7264BA1D327DE800FEECB1 /* ContributionGetterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7264B91D327DE800FEECB1 /* ContributionGetterTests.swift */; };
 		BF7264C51D327DE800FEECB1 /* ContributionGetterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7264C41D327DE800FEECB1 /* ContributionGetterUITests.swift */; };
+		BFF843661D32811E008ECCCF /* .ignore in Resources */ = {isa = PBXBuildFile; fileRef = BFF843651D32811E008ECCCF /* .ignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BF7264C01D327DE800FEECB1 /* ContributionGetterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContributionGetterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7264C41D327DE800FEECB1 /* ContributionGetterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionGetterUITests.swift; sourceTree = "<group>"; };
 		BF7264C61D327DE800FEECB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF843651D32811E008ECCCF /* .ignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .ignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				BF7264AB1D327DE800FEECB1 /* Assets.xcassets */,
 				BF7264AD1D327DE800FEECB1 /* LaunchScreen.storyboard */,
 				BF7264B01D327DE800FEECB1 /* Info.plist */,
+				BFF843651D32811E008ECCCF /* .ignore */,
 			);
 			path = ContributionGetter;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF7264AF1D327DE800FEECB1 /* LaunchScreen.storyboard in Resources */,
+				BFF843661D32811E008ECCCF /* .ignore in Resources */,
 				BF7264AC1D327DE800FEECB1 /* Assets.xcassets in Resources */,
 				BF7264AA1D327DE800FEECB1 /* Main.storyboard in Resources */,
 			);
@@ -482,6 +486,7 @@
 				BF7264CB1D327DE800FEECB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF7264CC1D327DE800FEECB1 /* Build configuration list for PBXNativeTarget "ContributionGetterTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				BF7264CE1D327DE800FEECB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF7264CF1D327DE800FEECB1 /* Build configuration list for PBXNativeTarget "ContributionGetterUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				BF7264D11D327DE800FEECB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
