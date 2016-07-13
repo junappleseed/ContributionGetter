@@ -23,11 +23,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-    // GETボタン押下時の処理です。
+    /* GETボタン押下時の処理です。 */
     @IBAction func getButtonClicked(sender: UIButton) {
         if let id = idTextField.text {
             resultLabel.text = "「\(id)」です。"
         }
     }
 }
-
