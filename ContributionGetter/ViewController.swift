@@ -10,9 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    /* Qiita ID 入力テキストボックス */
     @IBOutlet weak var idTextField: UITextField!
-    /* 結果表示ラベル */
     @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad() {
@@ -23,10 +21,38 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-    /* GETボタン押下時の処理です。 */
     @IBAction func getButtonClicked(sender: UIButton) {
-        if let id = idTextField.text {
-            resultLabel.text = "「\(id)」です。"
+        
+        let id = idTextField.text!
+        if id == "" {
+            showAlertMessage(id: id)
+            return
         }
+        
+        guard let (contributions, followers, items) = QiitaUserStatus.getValues(id: id) else {
+            showAlertMessage(id: id)
+            return
+        }
+        
+        print("contributions=\(contributions)")
+        print("followers=\(followers)")
+        print("items=\(items)")
+        
+        resultLabel.text = "\(id) のContributionは \(contributions) です。"
+    }
+    
+    func showAlertMessage(id id: String) {
+        
+        let message: String
+        if id == "" {
+            message = "値を入力してください。"
+        } else {
+            message = "「\(id)」のステータスは取得できませんでした。"
+        }
+        
+        let alert = UIAlertController(title: "エラー", message: message, preferredStyle: .Alert)
+        let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        alert.addAction(action)
+        presentViewController(alert, animated: true, completion: nil)
     }
 }
